@@ -1,0 +1,149 @@
+/* ontactommon */
+
+/*
+1- Common styles
+2- general styles
+3- Sections
+    3.0- Header
+    3.1- Home section 
+    3.2- about section 
+    3.3- portfolio section 
+    3.4- services section 
+    3.5- prices section 
+    3.6- team section 
+    3.7- blog page 
+    3.8- contact section 
+    3.9- Footer section
+*/
+
+/*   Plan
+     - container (center)
+     - opacity hover
+     - section heading
+     - section padding
+     - hover effect 1 ( left to right)
+     - hover effect 2 ( top to bottom)
+*/
+/* 1- common styles*/
+
+:root{
+    --mainColor :  #6195ff;
+    --grayColor:#999;
+    --bg-grey: #f9f9f9;
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+.hover-opacity{
+    transition: opacity 0.5s;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+.ltr-effect,
+.tb-effect{
+    position: relative;
+
+}
+
+.ltr-effect:after,
+.tb-effect:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #333;
+    z-index: -1;
+}
+.ltr-effect:after{
+    width: 0%;
+    transition: width .5s;
+}
+
+.tb-effect:after{  
+    height: 0%;
+    transition: height .5s;
+}
+
+.ltr-effect:hover:after{
+    width: 100%;
+}
+
+.tb-effect:hover:after{
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+/* 2- general css style*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  /* css 3 border & padding inside width & height*/
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+button{
+    font-family: inherit;
+}
+
+.clear{
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.pd-y{
+    padding: 120px 0;
+}
+
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-header .line{
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: var(--mainColor);
+    margin: 0px auto 70px auto;
+}
+
+
+
+
+
+
+
+

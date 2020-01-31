@@ -1,0 +1,76 @@
+
+
+/*------------------------- 3.5-prices section -----------*/
+
+.pricing-plan{
+    overflow: hidden;
+}
+
+.pricing-item{
+    text-align: center;
+    width: 30%;
+    float: left;
+    padding: 40px 15px;
+    border: 1px solid #a8a8a8;
+}
+
+.pricing-item.mrg{
+    margin: 0 5%;
+}
+
+.pricing-item-text{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    transition: color .5s;
+}
+
+.pricing-item-month{
+    width: 130px;
+    height: 130px;
+    padding: 20px 0;
+    margin: 20px auto;
+    border: 2px solid var(--mainColor);
+    border-radius: 50%;
+    transition: color .5s;
+}
+
+.pricing-item-month .dolar{
+    font-size: 40px;
+}
+.pricing-item-month.month{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.pricing-list{
+    list-style: none;
+}
+
+.pricing-list li{
+    line-height: 1.8;
+    color: var(--grayColor);
+    text-transform: capitalize;
+}
+
+.pricing-purchase{
+    background: none;
+    text-transform: uppercase;
+    border: 0;
+    width: 150px;
+    color: var(--mainColor);
+    display: block;
+    margin: 15px auto 0 auto;
+    border: 1px solid var(--mainColor);
+    padding: 10px;
+
+}
+
+.pricing-item:hover .pricing-item-month{
+    color: rgb(32, 32, 32);
+}
+.pricing-item:hover .pricing-item-text{
+    color: var(--mainColor);
+}

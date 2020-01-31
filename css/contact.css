@@ -1,0 +1,88 @@
+/*------------------------- 3.8- contact section -----------*/
+
+.contact-content{
+    overflow: hidden;
+    padding: 0 100px;
+}
+
+.contact-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.contact-item i{
+    color: var(--mainColor);
+    margin-bottom: 20px;
+}
+
+.contact-item.mrg{
+    margin: 0 5%;
+
+}
+
+.contact-title{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.contact-text{
+    color: var(--grayColor);
+}
+
+.contact-form{
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-name,
+.contact-mail,
+.contact-sub{
+    height: 35px;
+    padding: 0px 6px;
+    border-style: hidden;
+    font-size: 15px;
+    background: var(--bg-grey);
+}
+
+.contact-name{
+    margin: 30px 5px 10px 0;
+    width: 300px;
+}
+.contact-mail{
+    margin: 30px 0px 10px 0;
+    width: 300px;
+}
+
+.contact-sub{
+    width: 610px;
+    margin-bottom: 10px;
+}
+
+.contact-desc{
+    background: var(--bg-grey);
+    border-style: hidden;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    padding:  6px;
+    width: 610px;
+}
+
+.contact-button{
+    height: 40px;
+    width: 150px;
+    background: var(--mainColor);
+    border: 0;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-button:hover{
+    opacity: .8;   
+}
+
+.contact-button:hover{
+    opacity: .8; 
+}
